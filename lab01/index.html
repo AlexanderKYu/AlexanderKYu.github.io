@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+	<! IMPORTANT to use a CSS file - external >
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Survey</h1>
+	<form id="myform" action="index.php" >
+	<br>
+	<br>
+
+	<h2>What do you think of the UI in this <a href="https://codeinthedarkmtl.dev/">Code in the Dark</a> site?</h2>	
+	<br>
+	<br>
+	<! You should make your image clickable>
+	<a href="https://codeinthedarkmtl.dev/"><img src="images/CITD.png" width="75%" height="auto"></a>
+	<br>
+	<br>
+	<div class="question">
+	<h2> Personal Information </h2>
+	<p>First name: <input type="text" name="firstname"></p>
+	<p>Last name: <input type="text" name="lastname"></p>
+	<br>
+	<br>
+		
+	</div>	
+		
+	<div class="question">
+		<h2> What you like about the website?</h2>
+		<div class="options">
+			<input type="checkbox" name="Color" value="Graphic">Graphic<br>
+			<input type="checkbox" name="Color" value="Video">Video<br>
+			<input type="checkbox" name="Color" value="Theme">Theme<br>
+			<input type="checkbox" name="Color" value="Information">Information<br>
+		</div>
+		
+		
+		<br>
+		
+		<h2>After viewing this website would you be interested in participating?</h2>
+		<select id="favorite">
+			<option value="Yes" selected="selected">Yes</option>
+			<option value="No">No</option>
+		</select>
+
+		<br>
+		<br>
+
+		<h2>What is your overall rating of the site?</h2>
+		<input type="radio" name="rate" value="1">1
+		<input type="radio" name="rate" value="2">2
+		<input type="radio" name="rate" value="3">3
+		<input type="radio" name="rate" value="4">4
+		<input type="radio" name="rate" value="5">5
+		<br>
+		(5 is the best rating and 1 is the worst rating)
+	</div>
+	
+	<br>
+	<br>
+		
+	Comments:<br>
+	<textarea rows="5" cols="30"></textarea>
+			
+	<br>
+	<br>
+	<div class="sub_button">
+		<button id="submitButton" type="button" class="block">
+			SUBMIT
+		</button>
+	</div>		
+
+	<div class="footer">
+		<p id="signature">Site created by Alexander Yu</p>	
+	</div>
+	</form>
+  </body>
+</html> 

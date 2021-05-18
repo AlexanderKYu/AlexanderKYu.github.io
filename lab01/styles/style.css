@@ -1,0 +1,22 @@
+* {
+    color: white;
+    background-color: rgb(17, 18, 22);
+    text-align: center;
+}
+
+.sub_button button{
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer {
+    float: right;
+    margin-right: 10%;
+}
+
+.options{
+    width: fit-content;
+    margin:auto;
+    text-align: left;
+}
