@@ -20,3 +20,7 @@
     margin:auto;
     text-align: left;
 }
+
+input[type="text"]{
+    text-align: left;
+}
