@@ -85,7 +85,7 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is $ " + getTotalPrice(chosenProducts).toFixed(2)));
     if(parseInt(getTotalPrice(chosenProducts)) != 0){
         document.getElementById("value").innerHTML = "Total price: $ " + getTotalPrice(chosenProducts).toFixed(2);
     }else{
@@ -93,4 +93,29 @@ function selectedItems(){
     }
     
 		
+}
+
+function funcCheck(){
+	var ele = document.getElementsByName("product");
+	var chosenProducts = [];
+	
+	var c = document.getElementById('displayCart');
+	c.innerHTML = "";
+	
+	// build list of selected item
+	var para = document.createElement("P");
+	para.innerHTML = "You selected : ";
+	para.appendChild(document.createElement("br"));
+	for (i = 0; i < ele.length; i++) { 
+		if (ele[i].checked) {
+			para.appendChild(document.createTextNode(ele[i].value));
+			para.appendChild(document.createElement("br"));
+			chosenProducts.push(ele[i].value);
+		}
+	}
+	if(getTotalPrice(chosenProducts) != 0){
+		document.getElementById("check").innerHTML = "Thank you come again!";
+	}else{
+		document.getElementById("check").innerHTML = "Please make selection first!";
+	}
 }
