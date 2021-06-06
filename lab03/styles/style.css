@@ -7,10 +7,9 @@
 }
 
 .options {
-  width: fit-content;
-  margin: auto;
-  text-align: left;
+  text-align: center;
 }
+
 
 input[type='checkbox'] {
   -webkit-appearance:none;

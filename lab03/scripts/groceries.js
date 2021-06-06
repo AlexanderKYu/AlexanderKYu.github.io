@@ -3,13 +3,14 @@
 
 var products = [
 	{
-		name: "Brocoli $ 1.99",
+		name: "Broccoli $ 1.99",
 		vegetarian: true,
 		glutenFree: true,
         dairy: true,
         nut: true,
         organic: true,
-		price: 1.99
+		price: 1.99,
+        image: "../lab03/assets/Broccoli.png"
 	},
 	{
 		name: "Bread $ 2.35",
@@ -18,7 +19,8 @@ var products = [
         dairy: true,
         nut: true,
         organic: false,
-		price: 2.35
+		price: 2.35,
+        image: "../lab03/assets/Bread.png"
 	},
 	{
 		name: "Salmon $10.00",
@@ -27,7 +29,8 @@ var products = [
         dairy: true,
         nut: true,
         organic: true,
-		price: 10.00
+		price: 10.00,
+        image: "../lab03/assets/Salmon.png"
 	},
     {
         name: "Shredded Nacho Cheese  $ 2.50",
@@ -36,7 +39,8 @@ var products = [
         dairy: false,
         nut: true,
         organic: false,
-        price: 2.50
+        price: 2.50,
+        image: "../lab03/assets/NachoCheese.png"
     },
     {
         name: "Tomato $ 1.25",
@@ -45,7 +49,8 @@ var products = [
         dairy: true,
         nut: true,
         organic: true,
-        price: 1.25
+        price: 1.25,
+        image: "../lab03/assets/Tomato.png"
     },
     {
         name: "BBQ Chips $ 1.25",
@@ -54,7 +59,8 @@ var products = [
         dairy: true,
         nut: true,
         organic: false,
-        price: 1.25
+        price: 1.25,
+        image: "../lab03/assets/BBQChips.png"
     },
     {
         name: "Oh Henry! $ 1.25",
@@ -63,7 +69,8 @@ var products = [
         dairy: true,
         nut: false,
         organic: false,
-        price: 1.25
+        price: 1.25,
+        image: "../lab03/assets/OhHenry.png"
     },
     {
         name: "Bananas $ 1.50",
@@ -72,7 +79,8 @@ var products = [
         dairy: true,
         nut: true,
         organic: true,
-        price: 1.50
+        price: 1.50,
+        image: "../lab03/assets/Banana.png"
     },
     {
         name: "Chocolate Milk $ 3.20",
@@ -81,7 +89,8 @@ var products = [
         dairy: false,
         nut: true,
         organic: false,
-        price: 3.20
+        price: 3.20,
+        image: "../lab03/assets/CMilk.png"
     },
     {
         name: "Almond Milk $ 2.20",
@@ -90,7 +99,8 @@ var products = [
         dairy: true,
         nut: false,
         organic: false,
-        price: 2.20
+        price: 2.20,
+        image: "../lab03/assets/AMilk.png"
     }
 ];
 
@@ -181,7 +191,7 @@ function restrictListProducts(prods, organicSelect) {
     }
 
 	
-	return product_names;
+	return product_list;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
