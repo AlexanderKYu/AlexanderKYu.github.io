@@ -1,0 +1,89 @@
+*{
+  font-size: xx-large;
+}
+
+.tabcontent {
+  text-align: center;
+}
+
+.options {
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+}
+input[type='checkbox']:checked {
+  background: green;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgb(17, 18, 22);
+}
+
+.tab p{
+    margin:0%;
+    padding: 13px;
+    color: white;
+    float: right;
+}
+
+.button5{
+  float:right;
+  background-color: yellow;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+ }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.title{
+  font-size: larger;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size:xx-large;
+  display: inline;
+}
+
+.footer{
+  text-align: center;
+  bottom: 0;
+}

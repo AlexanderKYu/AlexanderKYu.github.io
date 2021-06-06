@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class = title></div>
+<b><h1 style="color:green;">YES</h1><h1>FRILLS</h1></b>
+<br>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button id="refresh" class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <p id="value">Total price: $ 0.00</p>
+  <button onclick ="funcCheck()">Checkout</button>
+  <p id="check"></p>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <p><b>Client Information</b></p>
+  <p>Tell us a bit about you.</p>
+  <p>Which dietary restrictions apply to you?</p>
+  <div class="options">
+    <input id="V" type="checkbox" value="Vegetarian" onchange="populateListProductChoices('displayProduct', 'organicSelect')"><label>Vegetarian</label><br>
+    <input id="G" type="checkbox" value="Gluten Free" onchange="populateListProductChoices('displayProduct', 'organicSelect')"><label>Gluten Free</label><br>
+    <input id="D" type="checkbox" value="Dairy Free" onchange="populateListProductChoices('displayProduct', 'organicSelect')"><label>Dairy Free</label><br>
+    <input id="N" type="checkbox" value="Nut Free" onchange="populateListProductChoices('displayProduct', 'organicSelect')"><label>Nut Free</label><br>
+  </div>
+  
+	
+  <br>
+  Preference on Organic Products: 
+  <select id="organicSelect" onchange="populateListProductChoices('displayProduct', this.id)">
+      <option value="both">Show Both</option>
+      <option value="Org">Organic</option>
+      <option value="nOrg">Non-Organic</option>
+  </select>
+    
+</div>
+
+<div id="Products" class="tabcontent">
+  <p><b>Your targeted products</b></p>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+   <div class="options">
+    <br>
+    <div id="displayProduct"></div>
+    <br>
+   </div>
+   <br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add Selected Items to Cart
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <p><b>Cart</b></p>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<div class = "footer">
+  <p>Created by Alexander Yu</p>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
