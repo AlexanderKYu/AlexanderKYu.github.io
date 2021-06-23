@@ -17,9 +17,56 @@ This will help you get started with your code!
     </head>
     <body>
         
-        <div class="container-fluid d-flex justify-content-center pt-2 top-fixed set1">
-            <h1 class="fs-1"><b>Alexander Veterinary Clinic </b><img src="./assets/logo.png" width="100" height="auto"></h1>
+        <div class="container-fluid text-center pt-2 fixed-top set1">
+            <h1 class="fs-1 p-0 m-0"><b>Alexander Veterinary Clinic </b><img src="./assets/logo.png" width="100" height="auto"></h1>
+
+            <nav class="navbar navbar-expand-md d-inline-flex p-0 m-0">
+                <button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><img src="assets/icons8-about-50.png" width="30" height="auto"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service"><img src="assets/icons8-veterinarian-50.png" width="30" height="auto"></a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experts"><img src="assets/icons8-stethoscope-50.png" width="30" height="auto"></a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#book" data-bs-toggle="modal"><img src="assets/icons8-credit-card-50.png" width="30" height="auto"></a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><img src="assets/icons8-phone-52.png" width="30" height="auto"></a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer"><img src="assets/icons8-open-sign-48.png" width="30" height="auto"></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
         </div>
+
+        <div id = 'contact'>
+
+        </div>
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            
 
 
         <div class="container-fluid d-flex justify-content-center pt-4 set2">
@@ -27,14 +74,14 @@ This will help you get started with your code!
         </div>
 
         <div class="container-fluid d-flex justify-content-center pb-4 set2">
-            <p class="fs-5">Location: 27 Donuts St. Toronto, ON M3W 5C2 <br>
+            <p class="fs-5">Location: 27 Donuts St. Toronto, ON M5W 5C2 <br>
                 Phone: (647) 123-4567 </p>
         </div>
         <!-- <div class="container-fluid d-flex justify-content-between row set3">
             <div class="col"></div>
         </div> -->
 
-        <div class="d-flex justify-content-center container-fluid py-4 set3">
+        <div class="d-flex justify-content-center container-fluid py-4 set3" id='about'>
             <div class="container-sm row">
 
                 <div class="col">
@@ -52,11 +99,17 @@ This will help you get started with your code!
                 </div>
             </div>
         </div>
-
         
 
-        <div class="container-fluid d-flex justify-content-center py-4 set4">
-            <p class="fs-2">Services we offer for your pets:</p>
+        
+        <div class="container-fluid d-flex justify-content-center py-4 set4" id ='service'>
+            
+            <p class="fs-2">
+                <br>
+                <br>
+                <br>
+                Services we offer for your pets:
+            </p>
         </div>
 
         <table class="container-lg table table-hover set5">
@@ -68,23 +121,23 @@ This will help you get started with your code!
             </thead>
             <tbody>
                 <tr>
-                    <td>Dental Care</td>
+                    <td>Dental Care $ 90</td>
                     <td>Our knowledge and dental experience can help prevent and treat your dog's dental conditions, including periodontal disease</td>
                 </tr>
                 <tr>
-                    <td>Flea and Tick Treatment</td>
+                    <td>Flea and Tick Treatment $ 60</td>
                     <td>We employ various safe and effective preventive or flea and tick treatment methods for your dog's health and comfort</td>
                 </tr>
                 <tr>
-                    <td>Microchip ID</td>
+                    <td>Microchip ID $ 50</td>
                     <td>Our professional microchip ID services can help identify your dog in case he or she ever gets lost, stolen or separated from you</td>
                 </tr>
                 <tr>
-                    <td>Spay or Neuter</td>
+                    <td>Spay or Neuter $ 130</td>
                     <td>Our refined pre surgical, surgical and post op care will provide your dog with the safest and most comfortable surgical procedure</td>
                 </tr>
                 <tr>
-                    <td>Vaccinations</td>
+                    <td>Vaccinations (price my vary)</td>
                     <td>Our veterinarians and techs will customize vaccination protocols that account for your dog's age, medical history, environment, travel habits and lifestyle</td>
                 </tr>
             </tbody>
@@ -113,33 +166,41 @@ This will help you get started with your code!
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Dental Care
+                                    Dental Care $ 90
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Flea and Tick Treatment
+                                    Flea and Tick Treatment $ 60
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Microchip ID
+                                    Microchip ID $ 50
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Spay or Neuter
+                                    Spay or Neuter $ 130
                                 </label>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Vaccinations
+                                    Vaccinations (price my vary)
                                 </label>
                             </div>
+                            <br>
+                            Performed by:
+                            <br>
+                            <select >
+                                <option value="smith">Dr. Smith</option>
+                                <option value="bailey">Dr. Bailey</option>
+                                <option value="cole">Mr. Cole</option>
+                            </select>
                             <br>
                             Date
                             <div class="col-sm-10">
@@ -148,13 +209,15 @@ This will help you get started with your code!
                                         <i class="fa fa-calendar">
                                         </i>
                                     </div>
-                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                                    <input class="form-control" maxlength="10" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
                                 </div>
                             </div>
                             <br>
                             Time
                             <div class="md-form">
-                                <input class="form-control d-inline-flex" placeholder="8:30" type="text" style="width: 100px">
+                                <input class="form-control d-inline-flex" maxlength = "2" placeholder="8" type="text" style="width: 50px">
+                                :
+                                <input class="form-control d-inline-flex" maxlength = "2" placeholder="30" type="text" style="width: 50px">
                                 <select >
                                     <option value="AM">AM</option>
                                     <option value="PM">PM</option>
@@ -169,12 +232,45 @@ This will help you get started with your code!
                             Phone Number
                             <div class="md-form">
                                 (
-                                <input class="form-control d-inline-flex" placeholder="647" type="text" style="width: 55px">
+                                <input class="form-control d-inline-flex" maxlength = "3" placeholder="647" type="text" style="width: 55px">
                                 )
-                                <input class="form-control d-inline-flex" placeholder="123" type="text" style="width: 55px">
+                                <input class="form-control d-inline-flex" maxlength = "3" placeholder="123" type="text" style="width: 55px">
                                 -
-                                <input class="form-control d-inline-flex" placeholder="4567" type="text" style="width: 60px">
+                                <input class="form-control d-inline-flex" maxlength = "4" placeholder="4567" type="text" style="width: 60px">
                             </div>
+
+                            Payment required (credit-only):
+                            <br>
+                            Name on card:
+                            <div class="md-form">
+                                <input class="form-control" placeholder="John Smith" type="text" style="width: 230px">
+                            </div>
+                            <br>
+                            Card number: 
+                            <div class="md-form">
+                                
+                                <input class="form-control d-inline-flex" maxlength = "4" placeholder="XXXX" type="text" style="width: 70px">
+                                -
+                                <input class="form-control d-inline-flex" maxlength = "4" placeholder="XXXX" type="text" style="width: 70px">
+                                -
+                                <input class="form-control d-inline-flex" maxlength = "4" placeholder="XXXX" type="text" style="width: 70px">
+                                -
+                                <input class="form-control d-inline-flex" maxlength = "4" placeholder="XXXX" type="text" style="width: 70px">
+                            </div>
+                            <br>
+                            Expiry date:
+                            <div class="md-form">
+                                <input class="form-control d-inline-flex" maxlength = "2" placeholder="MM" type="text" style="width: 55px">
+                                /
+                                <input class="form-control d-inline-flex" maxlength = "2" placeholder="YY" type="text" style="width: 55px">
+                            </div>
+                            <br>
+                            Security code
+                            <div class="md-form">
+                                <input class="form-control d-inline-flex" maxlength = "3" placeholder="XXX" type="text" style="width: 60px">
+                            </div>
+                            
+
                             
                         </div>
                         <div class="modal-footer">
@@ -186,7 +282,7 @@ This will help you get started with your code!
             </div>
         </div>
 
-        <div class="container-fluid d-flex justify-content-center py-4 set6">
+        <div class="container-fluid d-flex justify-content-center py-4 set6" id = 'experts'>
             <p class="fs-2">Listen to our experts!</p>
         </div>
 
@@ -195,19 +291,19 @@ This will help you get started with your code!
                 <img src="./assets/doctor1.png" class="card-img-top" alt="..." height="250" width="auto">
                 <div class="card-body">
                     <p class="card-text"><i>"We take extra precautions in taking care of your pets and making sure they come back home with a smile."</i> <br>
-                    - Dr.Smith</p>
+                    - Dr. Smith</p>
                 </div>
             </div>
             <div class="card" style="width: 16rem;">
                 <img src="./assets/doctor2.png" class="card-img-top" alt="..." height="250" width="auto">
                 <div class="card-body">
-                    <p class="card-text"><i>"Having a clean environment is important to us and your pets."</i><br> - Dr.Bailey </p>
+                    <p class="card-text"><i>"Having a clean environment is important to us and your pets."</i><br> - Dr. Bailey </p>
                 </div>
             </div>
             <div class="card" style="width: 16rem;">
                 <img src="./assets/doctor3.png" class="card-img-top" alt="..." height="250" width="auto">
                 <div class="card-body">
-                    <p class="card-text"><i>"The clinic has the state of the art technologies to ensure the safest operations on your pets!"</i><br> - Mr.Cole </p>
+                    <p class="card-text"><i>"The clinic has the state of the art technologies to ensure the safest operations on your pets!"</i><br> - Mr. Cole </p>
                 </div>
             </div>
         </div>
@@ -216,24 +312,24 @@ This will help you get started with your code!
         <!-- Extra line breaks so the footer doesnt block anything  -->
         <br>
         <br>
+        <!-- <br>
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <br>
-        <br>
+        <br> -->
 
 
 
-        <div class="d-flex justify-content-center container-fluid fixed-bottom bg-dark text-light">
+        <div class="d-flex justify-content-center container-fluid bg-dark text-light" id='footer'>
             <footer class="d-flex justify-content-between container-sm row">
                 <p class="container-sm fs-6 col">
                     <b class ='fs-5'>Contact: <br></b>
                     27 Donuts St. <br>
                     Toronto, ON <br>
-                    M3W 5C2 <br>
+                    M5W 5C2 <br>
                     (647) 123-4567 <br>
                 </p>
                 <p class="container-sm fs-6 col">
