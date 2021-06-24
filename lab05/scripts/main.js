@@ -36,7 +36,6 @@ function verify(){
     var cExpY = document.getElementById("creditExpY").value;
     var cSec = document.getElementById("creditSec").value;
 
-
     var nonDigits = /^[a-zA-Z_.+-]+$/;
 
     if(parseInt(name).toString() != 'NaN'){
@@ -116,9 +115,28 @@ var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"];
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
-    // Sunday is Day 0, disable all Sundays
-    if (date.getDay() === 0 || date.getDay() === 6)
+
+    var expert = document.getElementById("expert").value;
+
+
+    if (date.getDay() === 0 || date.getDay() === 6){
         return [false];
+    }
+
+    if (expert == 'smith'){
+        if (date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 4){
+            return[false];
+        }
+    }else if (expert == 'bailey'){
+        if (date.getDay() === 1 || date.getDay() === 3 || date.getDay() === 5){
+            return[false];
+        }
+    }else if (expert == 'cole'){
+        if (date.getDay() === 1 || date.getDay() === 2 || date.getDay() === 4 || date.getDay() === 5){
+            return[false];
+        }
+    }
+
     var string = jQuery.datepicker.formatDate(setDateFormat, date);
     return [ unavailableDates.indexOf(string) === -1 ]
 }
@@ -242,6 +260,10 @@ $(document).ready(function(){
             alert("Please only enter digits into the first parameter of the phone number!");
             return;
         }
+
+        if(parseInt(tmp).toString().length != 3){
+            alert("Please enter the correct amount of digits (only digits) into the first parameter of the phone number!")
+        }
         
     });
 
@@ -250,6 +272,10 @@ $(document).ready(function(){
         if (nonDigits.test(tmp)){
             alert("Please only enter digits into the second parameter of the phone number!");
             return;
+        }
+
+        if(parseInt(tmp).toString().length != 3){
+            alert("Please enter the correct amount of digits (only digits) into the second parameter of the phone number!")
         }
         
     });
@@ -260,6 +286,10 @@ $(document).ready(function(){
             alert("Please only enter digits into the third parameter of the phone number!");
             return;
         }
+
+        if(parseInt(tmp).toString().length != 4){
+            alert("Please enter the correct amount of digits (only digits) into the third parameter of the phone number!")
+        }
         
     });
 
@@ -268,6 +298,10 @@ $(document).ready(function(){
         if (nonDigits.test(tmp)){
             alert("Please only enter digits into the first parameter of the credit card number!");
             return;
+        }
+
+        if(parseInt(tmp).toString().length != 4){
+            alert("Please enter the correct amount of digits (only digits) into the first parameter of the credit card number!")
         }
         
     });
@@ -278,6 +312,10 @@ $(document).ready(function(){
             alert("Please only enter digits into the second parameter of the credit card number!");
             return;
         }
+
+        if(parseInt(tmp).toString().length != 4){
+            alert("Please enter the correct amount of digits (only digits) into the second parameter of the credit card number!")
+        }
         
     });
 
@@ -287,6 +325,10 @@ $(document).ready(function(){
             alert("Please only enter digits into the third parameter of the credit card number!");
             return;
         }
+
+        if(parseInt(tmp).toString().length != 4){
+            alert("Please enter the correct amount of digits (only digits) into the third parameter of the credit card number!")
+        }
         
     });
 
@@ -295,6 +337,10 @@ $(document).ready(function(){
         if (nonDigits.test(tmp)){
             alert("Please only enter digits into the fourth parameter of the credit card number!");
             return;
+        }
+
+        if(parseInt(tmp).toString().length != 4){
+            alert("Please enter the correct amount of digits (only digits) into the fourth parameter of the credit card number!")
         }
         
     });
@@ -322,6 +368,10 @@ $(document).ready(function(){
         if (nonDigits.test(tmp)){
             alert("Please only enter digits for the security code of the credit card!");
             return;
+        }
+
+        if(parseInt(tmp).toString().length != 3){
+            alert("Please enter the correct amount of digits (only digits) into the security code of the credit card!")
         }
         
     });
