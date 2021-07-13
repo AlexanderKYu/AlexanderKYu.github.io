@@ -3,19 +3,22 @@ import React from 'react';
 const NavBar = () => {
     return ( 
         <nav className="navbar">
-            <h1>Dough Machine</h1>
+            <div className="navbarTitle">
+                <img src="https://img.icons8.com/emoji/48/000000/money-with-wings-emoji.png" width="130px"/>
+                <h1>Dough Machine</h1>
+            </div>
             <br />
-            <a href="/">Home</a>
+            <a href="/"><img src="https://img.icons8.com/ios/50/000000/home--v3.png" width="30px" /> Home</a>
             <br />
-            <a href="/">Pastries</a>
+            <a href="/"><img src="https://img.icons8.com/windows/32/000000/croissant.png" width="30px"/> Pastries</a>
             <br />
-            <a href="/">Best Rated</a>
+            <a href="/"><img src="https://img.icons8.com/ios-glyphs/30/000000/star--v2.png" width="30px"/> Best Rated</a>
             <br />
-            <a href="/">Bakers Picks</a>
+            <a href="/"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</a>
             <br />
-            <a href="/">Bakers</a>
+            <a href="/"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</a>
             <br />
-            <a href="/">Help</a>
+            <a href="/"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</a>
             <br />
 
             <div className="footer">
@@ -30,9 +33,6 @@ const NavBar = () => {
                 <p>10:00 AM - 5:00 PM</p>
                 <p>Sunday:</p>
                 <b><p>Closed</p></b>
-                
-
-
             </div>
         </nav>
     );

@@ -7,16 +7,22 @@
   font-family: "Quicksand";
 }
 .home{
-  margin-left: 200px;
+  margin-left: 220px;
+}
+
+.navbarTitle {
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar {
   padding-top: 10px;
+  padding-left: 10px;
   background-color: grey;
   display: flex;
   flex-direction: column;
   position: fixed;
-  width: 200px;
+  width: 210px;
   height: 100%;
 }
 
