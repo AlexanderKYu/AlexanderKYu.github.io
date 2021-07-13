@@ -7,7 +7,45 @@
   font-family: "Quicksand";
 }
 .home{
-  margin-left: 220px;
+  margin-left: 240px;
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f7E7CE;
+}
+
+.aboutP {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f7E7CE;
+}
+
+.contactP {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.pastries{
+  margin-left: 230px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .navbarTitle {
@@ -18,7 +56,7 @@
 .navbar {
   padding-top: 10px;
   padding-left: 10px;
-  background-color: grey;
+  background-color: #D9AE80;
   display: flex;
   flex-direction: column;
   position: fixed;

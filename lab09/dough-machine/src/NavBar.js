@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return ( 
@@ -8,17 +9,17 @@ const NavBar = () => {
                 <h1>Dough Machine</h1>
             </div>
             <br />
-            <a href="/"><img src="https://img.icons8.com/ios/50/000000/home--v3.png" width="30px" /> Home</a>
+            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/home--v3.png" width="30px" /> Home</Link>
             <br />
-            <a href="/"><img src="https://img.icons8.com/windows/32/000000/croissant.png" width="30px"/> Pastries</a>
+            <Link to="/Pastries"><img src="https://img.icons8.com/windows/32/000000/croissant.png" width="30px"/> Pastries</Link>
             <br />
-            <a href="/"><img src="https://img.icons8.com/ios-glyphs/30/000000/star--v2.png" width="30px"/> Best Rated</a>
+            <Link to="/"><img src="https://img.icons8.com/ios-glyphs/30/000000/star--v2.png" width="30px"/> Best Rated</Link>
             <br />
-            <a href="/"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</a>
+            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</Link>
             <br />
-            <a href="/"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</a>
+            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</Link>
             <br />
-            <a href="/"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</a>
+            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</Link>
             <br />
 
             <div className="footer">
