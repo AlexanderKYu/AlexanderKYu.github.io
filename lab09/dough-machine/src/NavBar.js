@@ -22,7 +22,7 @@ const NavBar = () => {
             <Link to="/"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</Link>
             <br />
 
-            <div className="footer">
+            {/* <div className="footer">
                 <h2>Location:</h2>
                 <p>290 Bremner Blvd, Toronto, ON M5V 3L9</p>
                 <p>100 Queens Park, Toronto, ON M5S 2C6</p>
@@ -34,7 +34,7 @@ const NavBar = () => {
                 <p>10:00 AM - 5:00 PM</p>
                 <p>Sunday:</p>
                 <b><p>Closed</p></b>
-            </div>
+            </div> */}
         </nav>
     );
 }

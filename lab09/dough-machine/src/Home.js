@@ -6,7 +6,7 @@ const Home = () => {
             <h1 style={{fontSize: "200%"}}>Home</h1>
             <br />
             <div className="about">
-                <img src="https://media.blogto.com/articles/20170818-2048-SudForno17.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" width="1000px"/>
+                <img src="https://media.blogto.com/articles/20170818-2048-SudForno17.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70" width="50%"/>
                 <div className="aboutP">
                     <h1>About Us</h1>
                     <br />
@@ -38,7 +38,7 @@ const Home = () => {
                     <p>(647) 123-4567</p>
                     <p>Localbakers@dough.com</p>
                 </div>
-                <img src="https://www.flare.com/wp-content/uploads/2020/02/LOC_Bakeries_Inline-Roselle.jpg" />
+                <img src="https://www.flare.com/wp-content/uploads/2020/02/LOC_Bakeries_Inline-Roselle.jpg" width="40%"/>
             </div>
             <br />
             
