@@ -1,6 +1,8 @@
 import NavBar from './NavBar';
 import Home from './Home';
 import Pastries from './Pastries';
+import Contact from './Contact';
+import Help from './Help';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,6 +20,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={ Home } />
           <Route path="/Pastries" component={ Pastries } />
+          <Route path="/Contact" component={ Contact } />
+          <Route path="/Help" component={ Help } />
         </Switch>
       </div>
     </Router>

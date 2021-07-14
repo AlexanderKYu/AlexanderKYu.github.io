@@ -6,11 +6,47 @@
   font-size: xx-large;
   font-family: "Quicksand";
 }
+
 .home{
   margin-left: 240px;
   margin-right: 20px;
   padding-top: 10px;
   text-align: center;
+}
+
+.contactPage{
+  margin-left: 240px;
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.help {
+  display: flex;
+  flex-direction: row;
+}
+
+.helpPage{
+  margin-left: 240px;
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.helpP {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f7E7CE;
+}
+
+.helpP b{
+  text-align: left;
+}
+
+.helpP p{
+  text-align: left;
+  padding-left: 50px;
 }
 
 .about {

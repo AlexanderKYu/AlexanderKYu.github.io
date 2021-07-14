@@ -19,7 +19,9 @@ const NavBar = () => {
             <br />
             <Link to="/"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</Link>
             <br />
-            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</Link>
+            <Link to="/Contact"><img src="https://img.icons8.com/ios/50/000000/phone.png" width="30px"/> Contact</Link>
+            <br />
+            <Link to="/Help"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</Link>
             <br />
 
             {/* <div className="footer">
