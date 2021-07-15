@@ -17,7 +17,7 @@ const NavBar = () => {
             <br />
             <Link to="/"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</Link>
             <br />
-            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</Link>
+            <Link to="/Bakers"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</Link>
             <br />
             <Link to="/Contact"><img src="https://img.icons8.com/ios/50/000000/phone.png" width="30px"/> Contact</Link>
             <br />

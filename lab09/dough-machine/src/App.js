@@ -3,6 +3,7 @@ import Home from './Home';
 import Pastries from './Pastries';
 import Contact from './Contact';
 import Help from './Help';
+import Bakers from './Bakers';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Pastries" component={ Pastries } />
           <Route path="/Contact" component={ Contact } />
           <Route path="/Help" component={ Help } />
+          <Route path="/Bakers" component={ Bakers } />
         </Switch>
       </div>
     </Router>

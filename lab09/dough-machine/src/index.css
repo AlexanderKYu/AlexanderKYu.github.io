@@ -21,6 +21,29 @@
   text-align: center;
 }
 
+.bakersPage{
+  margin-left: 240px;
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.baker {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f7E7CE;
+}
+
+.bakerP {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #f7E7CE;
+}
+
 .help {
   display: flex;
   flex-direction: row;
@@ -42,6 +65,7 @@
 
 .helpP b{
   text-align: left;
+  padding-left: 10px;
 }
 
 .helpP p{
