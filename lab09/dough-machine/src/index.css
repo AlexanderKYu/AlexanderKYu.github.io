@@ -124,15 +124,6 @@
   height: 100%;
 }
 
-.navbar .footer p{
-  font-size: large;
-}
-
-.navbar .footer{
-  position: absolute;
-  bottom: 10px;
-}
-
 .navbar a {
   text-decoration: none;
   color: black;
@@ -169,4 +160,11 @@
 
 .check button{
   padding: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: grey;
 }

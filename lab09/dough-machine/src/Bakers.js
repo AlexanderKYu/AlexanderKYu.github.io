@@ -43,7 +43,22 @@ const Bakers = () => {
             </div>
 
             <br />
-            <br />
+            <div className="footer">
+                <div className="footerleft">
+                    <h2>Location:</h2>
+                    <p>290 Bremner Blvd, Toronto, ON M5V 3L9</p>
+                    <p>100 Queens Park, Toronto, ON M5S 2C6</p>
+                    <p><br /></p>
+                </div>
+
+                <div className="footerright">
+                    <h2>Hours:</h2>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 5:00 PM</p>
+                    <p>Sunday: <b>Closed</b></p>
+                    <p><br /></p>
+                </div>
+            </div>
         </div>
     );
 }

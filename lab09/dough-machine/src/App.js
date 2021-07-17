@@ -4,6 +4,8 @@ import Pastries from './Pastries';
 import Contact from './Contact';
 import Help from './Help';
 import Bakers from './Bakers';
+import BestRated from './BestRated';
+import BakersPicks from './BakersPicks';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +26,8 @@ function App() {
           <Route path="/Contact" component={ Contact } />
           <Route path="/Help" component={ Help } />
           <Route path="/Bakers" component={ Bakers } />
+          <Route path="/BestRated" component={ BestRated } />
+          <Route path="/BakersPicks" component={ BakersPicks } />
         </Switch>
       </div>
     </Router>

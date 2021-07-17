@@ -1,17 +1,15 @@
-import { React, useState } from 'react';
+import React from 'react';
 import SearchField from 'react-search-field';
 
-
-
-const Pastries = () => {
+const BRated = () => {
 
     function onEnter() {
         console.log("hit");
     }
 
-    return (  
+    return ( 
         <div className="pastries">
-            <h1 style={{fontSize: "200%"}}>Pastries</h1>
+            <h1 style={{fontSize: "200%"}}>Best Rated Pastries</h1>
             <div className="searchAndcheck">
                 <SearchField
                     placeholder="Search Pastries"
@@ -29,23 +27,6 @@ const Pastries = () => {
                     <button>Add to Order</button>
                 </div>
                 <div className="item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Croissant_photo_detouree_W_%28cropped%29.jpg/120px-Croissant_photo_detouree_W_%28cropped%29.jpg" width="25%"/>
-                    <h1>Croissant</h1>
-                    <p>A buttery flaky bread named for its distinctive crescent shape.</p>
-                    <br />
-                    <button>Add to Order</button>
-                </div>
-            </div>
-            <br />
-            <div className="itemsContainer">
-                <div className="item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Pecan_and_Maple_Danish.JPG/120px-Pecan_and_Maple_Danish.JPG" width="25%"/>
-                    <h1>Danish pastry</h1>
-                    <p>A sweet pastry, of Viennese origin, which has become a speciality of Denmark and neighboring Scandinavian countries.</p>
-                    <br />
-                    <button>Add to Order</button>
-                </div>
-                <div className="item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg/120px-Eclairs_with_chocolate_icing_at_Cafe_Blue_Hills.jpg" width="25%"/>
                     <h1>Éclair</h1>
                     <p>An oblong pastry made with choux dough filled with a cream and topped with icing.</p>
@@ -54,22 +35,6 @@ const Pastries = () => {
                 </div>
             </div>
             <br />
-            <div className="itemsContainer">
-                <div className="item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Galette_des_Rois.png/120px-Galette_des_Rois.png" width="25%"/>
-                    <h1>Galette</h1>
-                    <p>Galette is a term used in French cuisine to designate various types of flat, round or freeform crusty cakes.</p>
-                    <br />
-                    <button>Add to Order</button>
-                </div>
-                <div className="item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Recette_gateau_basque_etape_12.jpg/120px-Recette_gateau_basque_etape_12.jpg" width="25%"/>
-                    <h1>Gâteau Basque</h1>
-                    <p>Gâteau Basque is typically constructed from layers of an almond flour based cake with a filling of either pastry cream or preserved cherries.</p>
-                    <br />
-                    <button>Add to Order</button>
-                </div>
-            </div>
             <br />
             <div className="itemsContainer">
                 <div className="item">
@@ -105,7 +70,7 @@ const Pastries = () => {
                 </div>
             </div>
             <br />
-
+            
             <div className="footer">
                 <div className="footerleft">
                     <h2>Location:</h2>
@@ -125,8 +90,10 @@ const Pastries = () => {
 
 
 
+
         </div>
+
     );
 }
  
-export default Pastries;
+export default BRated;

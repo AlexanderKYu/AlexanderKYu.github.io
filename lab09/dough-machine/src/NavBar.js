@@ -13,9 +13,9 @@ const NavBar = () => {
             <br />
             <Link to="/Pastries"><img src="https://img.icons8.com/windows/32/000000/croissant.png" width="30px"/> Pastries</Link>
             <br />
-            <Link to="/"><img src="https://img.icons8.com/ios-glyphs/30/000000/star--v2.png" width="30px"/> Best Rated</Link>
+            <Link to="/BestRated"><img src="https://img.icons8.com/ios-glyphs/30/000000/star--v2.png" width="30px"/> Best Rated</Link>
             <br />
-            <Link to="/"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</Link>
+            <Link to="/BakersPicks"><img src="https://img.icons8.com/ios/50/000000/sidebar-menu.png" width="30px"/> Bakers Picks</Link>
             <br />
             <Link to="/Bakers"><img src="https://img.icons8.com/ios/50/000000/chef-hat.png" width="30px"/> Bakers</Link>
             <br />
