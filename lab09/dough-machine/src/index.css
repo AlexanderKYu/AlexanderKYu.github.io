@@ -143,3 +143,30 @@
   text-decoration: none; 
   color:white; 
 }
+
+.itemsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  margin: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item button{
+  padding: 5px;
+}
+
+.check{
+  text-align: right;
+  margin-right: 10px;
+}
+
+.check button{
+  padding: 5px;
+}

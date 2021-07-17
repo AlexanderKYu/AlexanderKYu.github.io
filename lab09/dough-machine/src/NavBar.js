@@ -21,6 +21,8 @@ const NavBar = () => {
             <br />
             <Link to="/Contact"><img src="https://img.icons8.com/ios/50/000000/phone.png" width="30px"/> Contact</Link>
             <br />
+            <Link to="/Order"><img src="https://img.icons8.com/ios/50/000000/checkout.png" width="30px"/> View Order</Link>
+            <br />
             <Link to="/Help"><img src="https://img.icons8.com/ios/50/000000/help.png" width="30px"/> Help</Link>
             <br />
 

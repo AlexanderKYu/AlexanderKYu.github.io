@@ -26,6 +26,10 @@ const Help = () => {
 
                     <b>Contact: </b>
                     <p>Find our different locations and hours. Feel free to always call and email too!</p>
+
+                    <b>View Order: </b>
+                    <p>View the pasties you have picked and check-out.</p>
+                    
                 </div>
                 <img src="https://eatingthroughto.com/wp-content/uploads/2020/03/IMG_8804-1024x768.jpg" width="40%"/>
 
