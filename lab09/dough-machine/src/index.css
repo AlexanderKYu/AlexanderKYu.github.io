@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+.orderPage{
+  margin-left: 240px;
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
 .bakersPage{
   margin-left: 240px;
   margin-right: 20px;
@@ -166,5 +172,34 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: grey;
+  background-color: lightgrey;
+}
+
+.orderPage table button{
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.step3Container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.finalButtons{
+  display: flex;
+  justify-content: center;
+}
+
+.finalButtons button{
+  padding: 5px;
+}
+
+.CBtn{
+  background-color: red;
+}
+
+.PBtn{
+  background-color: lightgreen;
 }

@@ -6,6 +6,8 @@ import Help from './Help';
 import Bakers from './Bakers';
 import BestRated from './BestRated';
 import BakersPicks from './BakersPicks';
+import Order from './Order';
+import French from './French';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +30,8 @@ function App() {
           <Route path="/Bakers" component={ Bakers } />
           <Route path="/BestRated" component={ BestRated } />
           <Route path="/BakersPicks" component={ BakersPicks } />
+          <Route path="/Order" component={ Order } />
+          <Route path="/FR" component={ French } />
         </Switch>
       </div>
     </Router>
